@@ -1,1 +1,2 @@
 # vapi
+Real-Time Stock Market Updates: Create a voice-enabled app that delivers real-time updates and analysis of stock market data. Users can ask for the latest stock prices, market trends, and news updates using voice commands, with web sockets ensuring timely delivery of information.

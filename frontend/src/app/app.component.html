@@ -1,0 +1,13 @@
+<!-- frontend/src/app/app.component.html -->
+<h2>Send a message to the yooooo server:</h2>
+<form (ngSubmit)="sendMessage(message); message = ''">
+  <input [(ngModel)]="message" name="message" type="text" autocomplete="off" />
+  <button type="submit" style="margin-left: 10px;">Send</button>
+</form>
+
+<h2>Received messages from the yoo yo server:</h2>
+<ul>
+  <li *ngFor="let data of webSocketService.receivedData">
+    {{ data.time }}: {{ data.message }}
+  </li>
+</ul>
